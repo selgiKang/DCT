@@ -5,9 +5,6 @@ class Q11 {
         String ret = "";
         int mode = 0;
 
-        if(code.isEmpty() || code==null){
-            ret = "EMPTY";
-        }
        char[] arr = new char[code.length()];
         for(int i=0;i<code.length();i++){
             arr[i] = code.charAt(i);
@@ -32,6 +29,11 @@ class Q11 {
                 }
             }
         }
+
+        if(ret.equals("")){
+            ret = "EMPTY";
+        }
+
         return ret;
     }
 

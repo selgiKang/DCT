@@ -9,9 +9,9 @@ public class Q10_Anagram {
         str2 = str2.replaceAll("\\s", "");
 
         //미리 문자열의 길이가 같은지 계산하여 1차적인 결과 수행
-        if (str1.length() != str2.length()) {
+        if (str1.length() != str2.length())
             return false;
-        }
+
 
         // 두 단어다 소문자로 변환 후 char 형식으로 변환해주는 toCharArray() 메서드 활용
         char[] char1 = str1.toLowerCase().toCharArray();

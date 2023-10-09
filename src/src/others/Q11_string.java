@@ -1,5 +1,6 @@
 package others;
 
+//문자열 안 문자들이 고유한 문자인지
 public class Q11_string {
     public boolean isUnique(String str) {
         if(str.length() > 128) return false;

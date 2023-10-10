@@ -1,34 +1,16 @@
 package day3;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 public class Q10 {
     public int[] solution(int[] arr, int[] query) {
-        List<Integer> result = new ArrayList<>();
-
-        for (int i = 0; i < query.length; i++) {
-            int index = query[i];
-            if (i % 2 == 0) {
-                for (int j = index + 1; j < arr.length; j++) {
-                    arr[j - 1] = arr[j];
-                }
-            } else {
-                for (int j = index; j < arr.length - 1; j++) {
-                    arr[j] = arr[j + 1];
-                }
+        for (int i = 0; i < query.length; i++) { //i = 인덱스
+            if (i % 2 == 0) {                 //인덱스가 짝수면
+                arr = Arrays.copyOfRange(arr,0,query[i]+1);
+            }else{
+               arr = Arrays.copyOfRange(arr,query[i],arr.length);
             }
         }
-
-        for (int i = 0; i < arr.length - query.length; i++) {
-            result.add(arr[i]);
-        }
-
-        int[] resultArray = new int[result.size()];
-        for (int i = 0; i < result.size(); i++) {
-            resultArray[i] = result.get(i);
-        }
-
-        return resultArray;
+        return arr;
     }
 }

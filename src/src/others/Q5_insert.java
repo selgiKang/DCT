@@ -12,13 +12,14 @@ public class Q5_insert {
 
         for(int i=1; i < arr.length; i++) {
             int standard = arr[i];
+            //바로 앞
             int compareIndex = i-1;
-
+            //만약 0고 앞의 것이 더 크면
             while(compareIndex >= 0 && standard < arr[compareIndex]) {
+                //앞의 것을 뒤에 넣음
                 arr[compareIndex+1] = arr[compareIndex];
                 compareIndex--;
             }
-
             arr[compareIndex + 1] = standard;
         }
 

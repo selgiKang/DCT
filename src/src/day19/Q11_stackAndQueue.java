@@ -1,9 +1,8 @@
 package day19;
 
-import java.util.Arrays;
 import java.util.Stack;
 
-public class Q11 {
+public class Q11_stackAndQueue {
     public int[] solution(int []arr) {
         Stack<Integer> stack = new Stack<>();
 

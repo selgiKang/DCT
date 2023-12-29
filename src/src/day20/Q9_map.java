@@ -3,7 +3,7 @@ package day20;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Q9 {
+public class Q9_map {
     public static int[] solution(String s) {
         int[] answer = new int[s.length()];
         Map<Character, Integer> lastIndexMap = new HashMap<>();

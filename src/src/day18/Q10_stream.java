@@ -2,7 +2,7 @@ package day18;
 
 import java.util.Arrays;
 
-public class Q10 {
+public class Q10_stream {
     public int[] solution(int[] arr){
         int[] answer = {};
         if(arr.length == 1){

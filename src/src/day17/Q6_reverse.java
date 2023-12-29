@@ -1,6 +1,6 @@
 package day17;
 
-public class Q6 {
+public class Q6_reverse {
     //StringBuilder 써서 reverse()로 역순 만들어 넣어도 됨.
     public int[] solution(long n) {
         String sn = String.valueOf(n);

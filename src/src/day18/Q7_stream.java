@@ -2,7 +2,7 @@ package day18;
 
 import java.util.Arrays;
 
-public class Q7 {
+public class Q7_stream {
     public int[] solution(int[] array, int divisor) {
         // divisor로 나누어 떨어지는 값을 저장할 동적 배열
         int[] resultArray = Arrays.stream(array)
